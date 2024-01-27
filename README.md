@@ -3,7 +3,9 @@
 
 Este es el repositorio del programario 1.
 
+
 Siga las instrucciones descritas en la actividad de google classroom correspondiente.
+
 
 Programa 1 terminado 
 programa 2 Terrrr
