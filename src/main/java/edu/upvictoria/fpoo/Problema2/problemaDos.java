@@ -4,14 +4,16 @@ import java.util.Scanner;
 
 public class problemaDos {
 
-    Scanner entrada = new Scanner(System.in);
-    public double Calif(int a, int b){
-        System.out.println("Ingresa la ponderacion te tus calificaciones iguales: ");
-        a = entrada.nextInt();
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Ingresa la calificación: ");
+        double calificacion = entrada.nextDouble();
 
-        return 0;
+        double promedio = calcularPromedio(calificacion);
+        System.out.println("El promedio es: " + promedio);
     }
 
-
+    public static double calcularPromedio(double calificacion) {
+        return calificacion * 4 / 4;
+    }
 }
-
