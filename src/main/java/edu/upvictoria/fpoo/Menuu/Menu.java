@@ -13,6 +13,7 @@
     import edu.upvictoria.fpoo.Problema19.problemaDieciNueve;
     import edu.upvictoria.fpoo.Problema2.problemaDos;
     import edu.upvictoria.fpoo.Problema20.problemaVeinte;
+    import edu.upvictoria.fpoo.Problema21.problemaVeintiUno;
     import edu.upvictoria.fpoo.Problema3.problemaTres;
     import edu.upvictoria.fpoo.Problema4.problemaCuatro;
     import edu.upvictoria.fpoo.Problema5.problemaCinco;
@@ -115,6 +116,9 @@
                     break;
                 case 20:
                     resolverProblema20();
+                    break;
+                case 21:
+                    resolverProblema21();
                     break;
                 default:
                     System.out.println("Opcion Invalida, intentelo otra ves");
@@ -241,5 +245,13 @@
             double resultado20 = P20.llamadaBelica();
             System.out.println("El total del costo de llamada es de : "+resultado20);
         }
+
+        public static void resolverProblema21(){
+            problemaVeintiUno P21 = new problemaVeintiUno();
+            double resultado21 = P21.ConaguaV2();
+            System.out.println("El total de adeudo a Conagua: "+ resultado21);
+
+        }
+
 
     }
