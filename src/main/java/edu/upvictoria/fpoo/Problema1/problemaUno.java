@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class problemaUno {
 
     Scanner entrada = new Scanner(System.in);
+
     public double sumar(int a , int b){
         return a + b;
     }
