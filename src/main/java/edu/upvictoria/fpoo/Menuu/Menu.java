@@ -4,6 +4,8 @@
     import edu.upvictoria.fpoo.Problema10.problemaDiez;
     import edu.upvictoria.fpoo.Problema11.problemaOnce;
     import edu.upvictoria.fpoo.Problema12.problemaDoce;
+    import edu.upvictoria.fpoo.Problema13.problemaTrece;
+    import edu.upvictoria.fpoo.Problema14.problemaCatorce;
     import edu.upvictoria.fpoo.Problema2.problemaDos;
     import edu.upvictoria.fpoo.Problema3.problemaTres;
     import edu.upvictoria.fpoo.Problema4.problemaCuatro;
@@ -30,6 +32,8 @@
             System.out.println("[10] Resolver Problema 10");
             System.out.println("[11] Resolver Problema 11");
             System.out.println("[12] Resolver Problema 12");
+            System.out.println("[13] Resolver Problema 13");
+            System.out.println("[14] Resolver Problema 14");
             System.out.println("Ingresa tu eleccion: ");
             int opcion = entrada.nextInt();
 
@@ -69,6 +73,12 @@
                     break;
                 case 12:
                     resolverProblema12();
+                    break;
+                case 13:
+                    resolverProblema13();
+                    break;
+                case 14:
+                    resolverProblema14();
                     break;
                 default:
                     System.out.println("Opcion Invalida, intentelo otra ves");
@@ -147,4 +157,17 @@
             double resultado12 = P12.AreaTotalTriangulo();
             System.out.println("El area De triangulo es:"+resultado12);
         }
+
+        public static void resolverProblema13(){
+            problemaTrece P13 = new problemaTrece();
+            double resultado13 = P13.DolaritoAPeso();
+            System.out.println("El cambio total a dolares por la cantidad de dinero mexicano que introduciste es de: "+resultado13);
+        }
+
+        public static void resolverProblema14(){
+            problemaCatorce P14 = new problemaCatorce();
+            double resultado14 = P14.EdadPreguntada();
+            System.out.println("La edad de tu empleado es de: "+resultado14);
+        }
+
     }
