@@ -6,6 +6,9 @@
     import edu.upvictoria.fpoo.Problema12.problemaDoce;
     import edu.upvictoria.fpoo.Problema13.problemaTrece;
     import edu.upvictoria.fpoo.Problema14.problemaCatorce;
+    import edu.upvictoria.fpoo.Problema15.problemaQuince;
+    import edu.upvictoria.fpoo.Problema16.problemaDieciseis;
+    import edu.upvictoria.fpoo.Problema17.problemaDiecisiete;
     import edu.upvictoria.fpoo.Problema2.problemaDos;
     import edu.upvictoria.fpoo.Problema3.problemaTres;
     import edu.upvictoria.fpoo.Problema4.problemaCuatro;
@@ -34,6 +37,10 @@
             System.out.println("[12] Resolver Problema 12");
             System.out.println("[13] Resolver Problema 13");
             System.out.println("[14] Resolver Problema 14");
+            System.out.println("[15] Resolver Problema 15");
+            System.out.println("[16] Resolver Problema 16");
+            System.out.println("[17] Resolver Problema 17");
+            System.out.println("[18] Resolver Problema 18");
             System.out.println("Ingresa tu eleccion: ");
             int opcion = entrada.nextInt();
 
@@ -79,6 +86,15 @@
                     break;
                 case 14:
                     resolverProblema14();
+                    break;
+                case 15:
+                    resolverProblema15();
+                    break;
+                case 16:
+                    resolverProblema16();
+                    break;
+                case 17:
+                    resolverProblema17();
                     break;
                 default:
                     System.out.println("Opcion Invalida, intentelo otra ves");
@@ -152,22 +168,41 @@
 
         }
 
-        public static void resolverProblema12(){
+        public static void resolverProblema12() {
             problemaDoce P12 = new problemaDoce();
             double resultado12 = P12.AreaTotalTriangulo();
-            System.out.println("El area De triangulo es:"+resultado12);
+            System.out.println("El area De triangulo es:" + resultado12);
         }
 
-        public static void resolverProblema13(){
+        public static void resolverProblema13() {
             problemaTrece P13 = new problemaTrece();
             double resultado13 = P13.DolaritoAPeso();
-            System.out.println("El cambio total a dolares por la cantidad de dinero mexicano que introduciste es de: "+resultado13);
+            System.out.println("El cambio total a dolares por la cantidad de dinero mexicano que introduciste es de: " + resultado13);
         }
 
-        public static void resolverProblema14(){
+        public static void resolverProblema14() {
             problemaCatorce P14 = new problemaCatorce();
             double resultado14 = P14.EdadPreguntada();
-            System.out.println("La edad de tu empleado es de: "+resultado14);
+            System.out.println("La edad de tu empleado es de: " + resultado14);
+        }
+
+
+        public static void resolverProblema15() {
+            problemaQuince P15 = new problemaQuince();
+            double resultado15 = P15.CobroPorHora();
+            System.out.println("El costo total del estacionamiento es de: " + resultado15);
+        }
+
+        public static void resolverProblema16() {
+            problemaDieciseis P16 = new problemaDieciseis();
+            double resultado16 = P16.LaBrochaGordita();
+            System.out.println("El precio dado al cliente por metro cuadrado sera de : " + resultado16);
+        }
+
+        public static void resolverProblema17(){
+            problemaDiecisiete P17 = new problemaDiecisiete();
+            double resultado17 = P17.TriangulitoHipotenusa();
+            System.out.println("La hipotenusa de C^2 = "+ resultado17);
         }
 
     }
