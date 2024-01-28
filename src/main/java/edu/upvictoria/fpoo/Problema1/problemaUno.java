@@ -21,7 +21,4 @@ public class problemaUno {
 
         return a + b;
     }
-
-
-
 }

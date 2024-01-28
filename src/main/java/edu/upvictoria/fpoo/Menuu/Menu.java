@@ -12,6 +12,7 @@
     import edu.upvictoria.fpoo.Problema18.problemaDieciOcho;
     import edu.upvictoria.fpoo.Problema19.problemaDieciNueve;
     import edu.upvictoria.fpoo.Problema2.problemaDos;
+    import edu.upvictoria.fpoo.Problema20.problemaVeinte;
     import edu.upvictoria.fpoo.Problema3.problemaTres;
     import edu.upvictoria.fpoo.Problema4.problemaCuatro;
     import edu.upvictoria.fpoo.Problema5.problemaCinco;
@@ -113,7 +114,7 @@
                     resolverProblema19();
                     break;
                 case 20:
-                    resolverProblema19();
+                    resolverProblema20();
                     break;
                 default:
                     System.out.println("Opcion Invalida, intentelo otra ves");
@@ -234,6 +235,11 @@
             problemaDieciNueve P19 = new problemaDieciNueve();
             double resultado19 = P19.TiempoViajeBici();
             System.out.println("El tiempo Estimado es de : "+resultado19);
+        }
+        public static void resolverProblema20(){
+            problemaVeinte P20 = new problemaVeinte();
+            double resultado20 = P20.llamadaBelica();
+            System.out.println("El total del costo de llamada es de : "+resultado20);
         }
 
     }
