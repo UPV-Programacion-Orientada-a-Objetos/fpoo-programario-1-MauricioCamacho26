@@ -9,6 +9,8 @@
     import edu.upvictoria.fpoo.Problema15.problemaQuince;
     import edu.upvictoria.fpoo.Problema16.problemaDieciseis;
     import edu.upvictoria.fpoo.Problema17.problemaDiecisiete;
+    import edu.upvictoria.fpoo.Problema18.problemaDieciOcho;
+    import edu.upvictoria.fpoo.Problema19.problemaDieciNueve;
     import edu.upvictoria.fpoo.Problema2.problemaDos;
     import edu.upvictoria.fpoo.Problema3.problemaTres;
     import edu.upvictoria.fpoo.Problema4.problemaCuatro;
@@ -41,6 +43,14 @@
             System.out.println("[16] Resolver Problema 16");
             System.out.println("[17] Resolver Problema 17");
             System.out.println("[18] Resolver Problema 18");
+            System.out.println("[19] Resolver Problema 19");
+            System.out.println("[20] Resolver Problema 20");
+            System.out.println("[21] Resolver Problema 21");
+            System.out.println("[22] Resolver Problema 22");
+            System.out.println("[23] Resolver Problema 23");
+            System.out.println("[24] Resolver Problema 24");
+            System.out.println("[25] Resolver Problema 25");
+            System.out.println("[26] Resolver Problema 26");
             System.out.println("Ingresa tu eleccion: ");
             int opcion = entrada.nextInt();
 
@@ -95,6 +105,15 @@
                     break;
                 case 17:
                     resolverProblema17();
+                    break;
+                case 18:
+                    resolverProblema18();
+                    break;
+                case 19:
+                    resolverProblema19();
+                    break;
+                case 20:
+                    resolverProblema19();
                     break;
                 default:
                     System.out.println("Opcion Invalida, intentelo otra ves");
@@ -203,6 +222,18 @@
             problemaDiecisiete P17 = new problemaDiecisiete();
             double resultado17 = P17.TriangulitoHipotenusa();
             System.out.println("La hipotenusa de C^2 = "+ resultado17);
+        }
+
+        public static void resolverProblema18(){
+            problemaDieciOcho P18 =  new problemaDieciOcho();
+            double resultado18 = P18.CurvitaLocota();
+            System.out.println("El precio de tu boleto a base los kilometros es de; "+resultado18);
+        }
+
+        public static void resolverProblema19(){
+            problemaDieciNueve P19 = new problemaDieciNueve();
+            double resultado19 = P19.TiempoViajeBici();
+            System.out.println("El tiempo Estimado es de : "+resultado19);
         }
 
     }
