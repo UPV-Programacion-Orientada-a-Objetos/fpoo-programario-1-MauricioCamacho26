@@ -9,6 +9,8 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
 
          Menu menu = new Menu();
-        menu.printMenu(entrada);
+         while (true) {
+             menu.printMenu(entrada);
+         }
     }
 }
