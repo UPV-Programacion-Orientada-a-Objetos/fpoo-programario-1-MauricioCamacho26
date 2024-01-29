@@ -14,6 +14,10 @@
     import edu.upvictoria.fpoo.Problema2.problemaDos;
     import edu.upvictoria.fpoo.Problema20.problemaVeinte;
     import edu.upvictoria.fpoo.Problema21.problemaVeintiUno;
+    import edu.upvictoria.fpoo.Problema22.problemaVeintiDos;
+    import edu.upvictoria.fpoo.Problema23.problemaVeintiTres;
+    import edu.upvictoria.fpoo.Problema24.problemaVeintiCuatro;
+    import edu.upvictoria.fpoo.Problema25.problemaVeintiCinco;
     import edu.upvictoria.fpoo.Problema3.problemaTres;
     import edu.upvictoria.fpoo.Problema4.problemaCuatro;
     import edu.upvictoria.fpoo.Problema5.problemaCinco;
@@ -21,6 +25,7 @@
     import edu.upvictoria.fpoo.Problema7.problemaSiete;
     import edu.upvictoria.fpoo.Problema9.problemaNueve;
 
+    import java.awt.desktop.SystemEventListener;
     import java.util.Scanner;
 
 
@@ -51,8 +56,7 @@
             System.out.println("[22] Resolver Problema 22");
             System.out.println("[23] Resolver Problema 23");
             System.out.println("[24] Resolver Problema 24");
-            System.out.println("[25] Resolver Problema 25");
-            System.out.println("[26] Resolver Problema 26");
+            System.out.println("[25] Resolver Problema 25 y 26");
             System.out.println("Ingresa tu eleccion: ");
             int opcion = entrada.nextInt();
 
@@ -119,6 +123,18 @@
                     break;
                 case 21:
                     resolverProblema21();
+                    break;
+                case 22:
+                    resolverProblema22();
+                    break;
+                case 23:
+                    resolverProblema23();
+                    break;
+                case 24:
+                    resolverProblema24();
+                    break;
+                case 25:
+                    resolverProblema25();
                     break;
                 default:
                     System.out.println("Opcion Invalida, intentelo otra ves");
@@ -253,5 +269,29 @@
 
         }
 
+        public  static void resolverProblema22(){
+            problemaVeintiDos P22 = new problemaVeintiDos();
+            double resultado22 = P22.companiaLuz();
+            System.out.println("El total de adeudo a la luz por cantidad de KW consumidos es de : "+resultado22);
+        }
+
+        public static void resolverProblema23(){
+            problemaVeintiTres P23 = new problemaVeintiTres();
+            double resultado23 = P23.SacarPrecios();
+            System.out.println("El precio final ya con iva es de: $"+resultado23);
+
+        }
+        public static void resolverProblema24(){
+            problemaVeintiCuatro P24 = new problemaVeintiCuatro();
+            double resultado24 = P24.Ahorrito();
+            System.out.println("El ahorro Anual es de : $"+resultado24);
+        }
+
+        public static void resolverProblema25(){
+            problemaVeintiCinco P25 = new problemaVeintiCinco();
+            double resultado25 = P25.empresaV3();
+            System.out.println("Esto es el problema 25 y 26 terminado. ");
+            System.out.println("El total gastado es de : $"+resultado25);
+        }
 
     }
